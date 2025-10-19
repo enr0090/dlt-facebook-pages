@@ -170,7 +170,7 @@ if __name__ == "__main__":
         print("✅ Pipeline produces compatible data")
         print("✅ dbt models are available") 
         print("\nNext steps:")
-        print("1. Run 'dbt run --models dbt_facebook_pages'")
+        print("1. Install dbt-facebook-pages and run 'dbt run --models dbt_facebook_pages'")
         print("2. Check the generated analytics tables")
         sys.exit(0)
     else:
