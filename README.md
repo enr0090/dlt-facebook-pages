@@ -31,7 +31,7 @@ The pipeline extracts:
 
 1. **Clone and setup environment:**
    ```bash
-   git clone git@github.com:enr0090/dlt-facebook-pages.git
+   git clone https://github.com/enr0090/dlt-facebook-pages.git
    cd dlt-facebook-pages
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
