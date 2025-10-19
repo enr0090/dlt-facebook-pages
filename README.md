@@ -108,9 +108,10 @@ dlt-facebook-pages/
 3. Add credentials to `.dlt/secrets.toml`:
 
 ```toml
-[sources.facebook_pages]
 facebook_refresh_token = "your_access_token_here"
 facebook_page_id = "your_page_id_here"
+facebook_client_id = "your_client_id_here"
+facebook_client_secret = "your_client_secret_here"
 ```
 
 ### DLT Configuration

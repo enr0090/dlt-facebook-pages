@@ -192,7 +192,7 @@ dbt run --models dbt_facebook_pages
 
 ## What you get:
 
-📊 **4 Fivetran-compatible tables:**
+📊 **4 dbt-compatible tables:**
 - `page` - Page information and metadata
 - `post_history` - Individual posts and content  
 - `daily_page_metrics_total` - Daily aggregated metrics
