@@ -31,7 +31,7 @@ The pipeline extracts:
 
 1. **Clone and setup environment:**
    ```bash
-   git clone <repository>
+   git clone git@github.com:enr0090/dlt-facebook-pages.git
    cd dlt-facebook-pages
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -142,7 +142,7 @@ DLT can export to Parquet format for use with other tools:
 
 ### Integration with dbt
 For data transformation, use our companion dbt project:
-👉 **[dbt-facebook-pages](../dbt-facebook-pages)** - Transform the extracted data with dbt models
+👉 **[dbt-facebook-pages](https://github.com/enr0090/dbt-facebook-pages)** - Transform the extracted data with dbt models
 
 ## 🔍 Monitoring & Validation
 
@@ -193,7 +193,7 @@ black facebook_pages_pipeline.py
 
 ## 🔗 Related Projects
 
-- **[dbt-facebook-pages](../dbt-facebook-pages)** - Transform this data with dbt models
+- **[dbt-facebook-pages](https://github.com/enr0090/dbt-facebook-pages)** - Transform this data with dbt models
 - [dlt](https://dlthub.com/) - Data Load Tool documentation
 - [Facebook Graph API](https://developers.facebook.com/docs/graph-api/) - API documentation
 
@@ -203,4 +203,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-**Next Step**: After extracting data, transform it with the **[dbt-facebook-pages](../dbt-facebook-pages)** project for analytics-ready models and dashboards.
+**Next Step**: After extracting data, transform it with the **[dbt-facebook-pages](https://github.com/enr0090/dbt-facebook-pages)** project for analytics-ready models and dashboards.
