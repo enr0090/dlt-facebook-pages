@@ -11,19 +11,19 @@ install:  ## Install Python dependencies
 	pip install -r requirements.txt
 
 setup:  ## Run the complete setup and validation
-	python setup_pipeline.py
+	./venv/bin/python setup_pipeline.py
 
 extract:  ## Extract data from Facebook API
-	python facebook_pages_pipeline.py
+	./venv/bin/python facebook_pages_pipeline.py
 
 validate:  ## Validate pipeline output
-	python validate_pipeline.py
+	./venv/bin/python validate_pipeline.py
 
 pipeline: extract validate  ## Run the complete extraction pipeline
 
 export:  ## Export extracted data to various formats
 	@echo "Available export formats:"
-	@echo "  - DuckDB database: facebook_pages_pipeline.duckdb"
+	@echo "  - DuckDB database: ./facebook_pages_pipeline.duckdb"
 	@echo "  - Parquet files: Available via DLT export commands"
 	@echo "  - CSV export: Use DuckDB CLI or Python scripts"
 

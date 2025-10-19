@@ -367,9 +367,15 @@ def post_metrics_resource(access_token: str, page_id: str, days_back: int):
 
 def get_data() -> None:
     """Main pipeline execution function"""
+    import os
+    
+    # Set the database path to current directory
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    db_path = os.path.join(current_dir, "facebook_pages_pipeline.duckdb")
+    
     pipeline = dlt.pipeline(
         pipeline_name='facebook_pages_pipeline',
-        destination='duckdb',
+        destination=dlt.destinations.duckdb(db_path),
         dataset_name='facebook_pages',
         progress="log"
     )
