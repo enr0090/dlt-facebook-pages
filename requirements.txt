@@ -1,0 +1,20 @@
+# Facebook Pages DLT Data Extraction Pipeline Requirements
+
+# Core DLT framework with DuckDB and Parquet support
+dlt[duckdb,parquet]>=1.4.0
+
+# REST API support for Facebook Graph API
+requests>=2.31.0
+
+# Data processing
+pandas>=2.0.0
+python-dateutil>=2.8.0
+pyarrow>=10.0.0
+pydantic>=2.0.0
+
+# Development and testing
+pytest>=7.0.0
+black>=23.0.0
+
+# Optional: For data export formats
+openpyxl>=3.0.0

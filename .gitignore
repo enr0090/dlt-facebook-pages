@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# DLT specific
+.dlt/pipeline_state/
+.dlt/*state*
+
+# Database files
+*.duckdb
+*.duckdb.wal
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Secrets (keep template only)
+.dlt/secrets.toml
+
+# pytest
+.pytest_cache/
+.coverage
+
+# Jupyter
+.ipynb_checkpoints/
